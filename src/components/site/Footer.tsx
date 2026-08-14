@@ -14,7 +14,7 @@ export function Footer() {
       <div className="container-x py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-[minmax(0,1.4fr)_auto_auto]">
           <div className="min-w-0 max-w-sm">
-            <Logo />
+            <Logo size="lg" />
             <p className="font-display mt-6 text-2xl font-semibold tracking-tight">
               Digital experiences. Built with purpose.
             </p>
