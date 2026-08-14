@@ -30,7 +30,7 @@ function ProcessPage() {
         title="A clear path from first conversation to launch day."
         copy="No mystery, no jargon — you always know what stage your project is in and what happens next."
       />
-      <ProcessSection />
+      <ProcessSection compact />
       <WhySection />
       <CTASection />
     </>

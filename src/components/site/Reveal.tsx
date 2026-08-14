@@ -16,6 +16,14 @@ export function Reveal({ children, className, delay = 0, as }: RevealProps) {
   useEffect(() => {
     const node = ref.current;
     if (!node) return;
+
+    if (
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      setVisible(true);
+      return;
+    }
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

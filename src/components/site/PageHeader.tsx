@@ -8,11 +8,11 @@ export function PageHeader({
   copy?: string;
 }) {
   return (
-    <section className="pt-32 pb-12 md:pt-44 md:pb-20">
+    <section className="pt-32 pb-14 md:pt-40 md:pb-20">
       <div className="container-x">
         <p className="eyebrow rise">{eyebrow}</p>
         <h1
-          className="rise mt-6 max-w-4xl text-[2.5rem] font-semibold leading-[1] sm:text-6xl lg:text-7xl"
+          className="rise mt-6 max-w-[18ch] text-[2.25rem] font-semibold leading-[1.04] tracking-[-0.02em] sm:text-5xl lg:text-[3.5rem]"
           style={{ animationDelay: "120ms" }}
         >
           {title}

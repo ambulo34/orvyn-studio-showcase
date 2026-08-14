@@ -80,7 +80,7 @@ function ProjectDetail() {
             ) : null}
           </div>
 
-          <h1 className="rise mt-5 max-w-4xl text-[2.5rem] font-semibold leading-[1] sm:text-6xl lg:text-7xl">
+          <h1 className="rise mt-5 max-w-[16ch] text-[2.25rem] font-semibold leading-[1.04] tracking-[-0.02em] sm:text-5xl lg:text-[3.5rem]">
             {project.title}
           </h1>
           <p
@@ -197,7 +197,7 @@ function ProjectDetail() {
               params={{ slug: next.slug }}
               className="group mt-5 flex flex-wrap items-end justify-between gap-6"
             >
-              <h2 className="text-4xl font-semibold leading-[1.02] sm:text-5xl lg:text-6xl">
+              <h2 className="text-[2rem] font-semibold leading-[1.06] tracking-[-0.02em] sm:text-4xl lg:text-5xl">
                 {next.title}
               </h2>
               <span className="inline-flex items-center gap-2 text-sm font-semibold transition-colors group-hover:text-accent">

@@ -14,7 +14,7 @@ export function Hero() {
             Digital Solutions Studio
           </p>
           <h1
-            className="rise mt-6 text-[2.75rem] font-semibold leading-[0.98] sm:text-6xl lg:text-7xl xl:text-[5.25rem]"
+            className="rise mt-6 max-w-[15ch] text-[2.5rem] font-semibold leading-[1.02] tracking-[-0.02em] sm:text-5xl lg:text-[3.75rem] xl:text-[4.25rem]"
             style={{ animationDelay: "140ms" }}
           >
             We build digital experiences that move businesses forward.

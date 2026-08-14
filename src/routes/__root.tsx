@@ -110,10 +110,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              'if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){var s=document.createElement("style");s.setAttribute("data-motion-gate","");s.textContent=".reveal:not([data-visible=\'true\']){opacity:0;transform:translateY(20px)}";document.head.appendChild(s)}',
+          }}
+        />
         <HeadContent />
       </head>
+
       <body>
         {children}
         <Scripts />
