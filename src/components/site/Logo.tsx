@@ -1,20 +1,26 @@
+import orvynLogo from "@/assets/orvyn-logo-light.png.asset.json";
 import { cn } from "@/lib/utils";
 
-/**
- * ORVYN wordmark.
- * Placeholder rendering until the official logo file is supplied —
- * swap the inner markup for an <img src={orvynLogo} /> when it is.
- */
-export function Logo({ className }: { className?: string }) {
+/** Official ORVYN lockup (light version, for dark surfaces). */
+export function Logo({
+  className,
+  size = "sm",
+}: {
+  className?: string;
+  size?: "sm" | "lg";
+}) {
   return (
-    <span
+    <img
+      src={orvynLogo.url}
+      alt="ORVYN — Building digital excellence"
+      width={784}
+      height={509}
+      decoding="async"
       className={cn(
-        "font-display text-[1.05rem] font-extrabold uppercase leading-none tracking-[0.34em] text-foreground",
+        "w-auto object-contain",
+        size === "sm" ? "h-10 md:h-11" : "h-20 md:h-24",
         className,
       )}
-    >
-      Orv
-      <span className="text-accent">y</span>n
-    </span>
+    />
   );
 }
