@@ -168,6 +168,14 @@
   }
 }
 
+/* No-JS / reduced-motion safety: never hide content permanently. */
+html:not([data-js="true"]) .reveal,
+html:not([data-js="true"]) .rise {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+}
+
 @utility link-underline {
   position: relative;
 
