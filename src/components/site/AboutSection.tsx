@@ -8,7 +8,7 @@ export function AboutSection() {
       <div className="container-x grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.8fr)] lg:gap-20">
         <Reveal className="min-w-0">
           <p className="eyebrow">About</p>
-          <h2 className="mt-6 text-4xl font-semibold leading-[1.02] sm:text-5xl lg:text-6xl">
+          <h2 className="mt-6 text-[2rem] font-semibold leading-[1.06] tracking-[-0.02em] sm:text-4xl lg:text-5xl">
             Digital, built with purpose.
           </h2>
           <p className="mt-7 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">

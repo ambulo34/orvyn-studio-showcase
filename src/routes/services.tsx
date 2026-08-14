@@ -30,7 +30,7 @@ function ServicesPage() {
         title="Everything your business needs to exist properly online."
         copy="We take on a small number of projects at a time so each one gets real design and engineering attention."
       />
-      <ServicesSection />
+      <ServicesSection compact />
       <ProcessSection />
       <CTASection />
     </>

@@ -27,7 +27,7 @@ export function SectionHeading({
     >
       <Reveal className="max-w-2xl">
         {eyebrow ? <p className="eyebrow mb-5">{eyebrow}</p> : null}
-        <h2 className="text-4xl font-semibold leading-[1.02] sm:text-5xl lg:text-6xl">
+        <h2 className="text-[2rem] font-semibold leading-[1.06] tracking-[-0.02em] sm:text-4xl lg:text-5xl">
           {title}
         </h2>
         {copy ? (

@@ -9,7 +9,7 @@ export function CTASection() {
       <div className="container-x">
         <Reveal className="mx-auto max-w-4xl text-center">
           <p className="eyebrow text-ink/60">Let's talk</p>
-          <h2 className="mt-6 text-5xl font-semibold leading-[0.98] sm:text-6xl lg:text-7xl">
+          <h2 className="mt-6 text-[2.5rem] font-semibold leading-[1.02] tracking-[-0.02em] sm:text-5xl lg:text-6xl">
             Have an idea? Let's build it.
           </h2>
           <p className="mx-auto mt-7 max-w-xl text-base leading-relaxed text-ink/70 md:text-lg">

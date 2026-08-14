@@ -29,7 +29,7 @@ function WorkPage() {
         title="The work speaks first."
         copy="Our portfolio is growing. Placeholder concepts show how we structure projects until each new build goes live."
       />
-      <WorkSection />
+      <WorkSection compact />
       <CTASection />
     </>
   );

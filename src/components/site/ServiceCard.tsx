@@ -15,7 +15,7 @@ export function ServiceCard({ service }: { service: Service }) {
           </span>
           <ArrowUpRight className="h-5 w-5 shrink-0 text-muted-foreground transition-all duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-accent" />
         </div>
-        <h3 className="mt-10 text-2xl font-semibold md:mt-16 md:text-3xl">
+        <h3 className="mt-12 text-2xl font-semibold md:mt-14 md:text-[1.75rem]">
           {service.title}
         </h3>
         <p className="mt-4 max-w-md text-sm leading-relaxed text-muted-foreground md:text-base">
