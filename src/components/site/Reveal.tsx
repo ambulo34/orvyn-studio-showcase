@@ -14,9 +14,9 @@ export function Reveal({ children, className, delay = 0, as }: RevealProps) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    document.documentElement.setAttribute("data-js", "true");
     const node = ref.current;
     if (!node) return;
+
     if (
       typeof window !== "undefined" &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches
