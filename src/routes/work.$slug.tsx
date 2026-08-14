@@ -55,7 +55,7 @@ function ProjectNotFound() {
 function ProjectDetail() {
   const { project } = Route.useLoaderData();
   const index = projects.findIndex((p) => p.slug === project.slug);
-  const next = projects[(index + 1) % projects.length];
+  const next = projects[(index + 1) % projects.length] ?? project;
 
   return (
     <article>
@@ -163,7 +163,7 @@ function ProjectDetail() {
               <Reveal
                 key={`${item.src}-${i}`}
                 delay={40}
-                className={i === 0 ? "md:col-span-2" : undefined}
+                {...(i === 0 ? { className: "md:col-span-2" } : {})}
               >
                 <figure className="group">
                   <div className="overflow-hidden rounded-xl border border-border bg-surface">
