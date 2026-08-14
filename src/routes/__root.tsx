@@ -114,7 +114,8 @@ function RootShell({ children }: { children: ReactNode }) {
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `document.documentElement.setAttribute("data-js","true")`,
+            __html:
+              'if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){var s=document.createElement("style");s.setAttribute("data-motion-gate","");s.textContent=".reveal:not([data-visible=\'true\']){opacity:0;transform:translateY(20px)}";document.head.appendChild(s)}',
           }}
         />
         <HeadContent />
