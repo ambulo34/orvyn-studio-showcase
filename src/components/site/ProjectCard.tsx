@@ -6,8 +6,8 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
   return (
     <article className="group">
       <Link
-        to="/work"
-        hash={project.slug}
+        to="/work/$slug"
+        params={{ slug: project.slug }}
         aria-label={`View project: ${project.title}`}
         className="block overflow-hidden rounded-xl border border-border bg-surface"
       >
@@ -42,8 +42,8 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
         </div>
 
         <Link
-          to="/work"
-          hash={project.slug}
+          to="/work/$slug"
+          params={{ slug: project.slug }}
           className="inline-flex items-center gap-2 text-sm font-semibold text-foreground transition-colors hover:text-accent"
         >
           View Project
