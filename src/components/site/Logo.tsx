@@ -18,7 +18,7 @@ export function Logo({
       decoding="async"
       className={cn(
         "w-auto object-contain",
-        size === "sm" ? "h-10 md:h-11" : "h-20 md:h-24",
+        size === "sm" ? "h-12 md:h-14" : "h-24 md:h-28",
         className,
       )}
     />
