@@ -30,7 +30,7 @@ function AboutPage() {
         title="A studio built for businesses that want to be taken seriously online."
         copy="We're building our portfolio deliberately — a small number of projects, each one made to a standard we're happy to put our name on."
       />
-      <AboutSection />
+      <AboutSection compact />
       <WhySection />
       <CTASection />
     </>

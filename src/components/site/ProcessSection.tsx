@@ -1,5 +1,6 @@
 import { ProcessSteps } from "./ProcessSteps";
 import { SectionHeading } from "./SectionHeading";
+import { ActionLink } from "./Button";
 
 export function ProcessSection({ compact = false }: { compact?: boolean }) {
   return (
@@ -13,6 +14,11 @@ export function ProcessSection({ compact = false }: { compact?: boolean }) {
             eyebrow="Process"
             title="From idea to launch."
             copy="A clear, structured way of working — so you always know where your project stands."
+            aside={
+              <ActionLink to="/process" variant="outline">
+                How we work
+              </ActionLink>
+            }
           />
         )}
         <ProcessSteps />

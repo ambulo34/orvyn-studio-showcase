@@ -2,6 +2,7 @@ import { projects } from "@/data/site";
 import { ProjectCard } from "./ProjectCard";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
+import { ActionLink } from "./Button";
 
 export function WorkSection({
   limit,
@@ -23,6 +24,13 @@ export function WorkSection({
             eyebrow="Work"
             title="Selected work"
             copy="A look at some of the digital experiences we've designed and built."
+            aside={
+              limit ? (
+                <ActionLink to="/work" variant="outline">
+                  View all work
+                </ActionLink>
+              ) : undefined
+            }
           />
         )}
         <div

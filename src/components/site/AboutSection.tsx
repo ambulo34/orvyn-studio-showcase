@@ -2,13 +2,16 @@ import aboutVisual from "@/assets/about-visual.jpg";
 import { Reveal } from "./Reveal";
 import { ActionLink } from "./Button";
 
-export function AboutSection() {
+export function AboutSection({ compact = false }: { compact?: boolean }) {
   return (
-    <section id="about" className="section-y hairline">
+    <section
+      id="about"
+      className={compact ? "hairline pb-24 pt-14 md:pb-32 md:pt-16" : "section-y hairline"}
+    >
       <div className="container-x grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.8fr)] lg:gap-20">
         <Reveal className="min-w-0">
-          <p className="eyebrow">About</p>
-          <h2 className="mt-6 text-[2rem] font-semibold leading-[1.06] tracking-[-0.02em] sm:text-4xl lg:text-5xl">
+          {compact ? null : <p className="eyebrow">About</p>}
+          <h2 className={compact ? "text-[2rem] font-semibold leading-[1.06] tracking-[-0.02em] sm:text-4xl lg:text-5xl" : "mt-6 text-[2rem] font-semibold leading-[1.06] tracking-[-0.02em] sm:text-4xl lg:text-5xl"}>
             Digital, built with purpose.
           </h2>
           <p className="mt-7 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
@@ -16,9 +19,11 @@ export function AboutSection() {
             experiences. We combine design, technology and strategy to create websites and
             digital products that don't just look good — they work.
           </p>
-          <ActionLink to="/about" variant="outline" className="mt-9">
-            More about ORVYN
-          </ActionLink>
+          {compact ? null : (
+            <ActionLink to="/about" variant="outline" className="mt-9">
+              More about ORVYN
+            </ActionLink>
+          )}
         </Reveal>
 
         <Reveal delay={120} className="min-w-0">
