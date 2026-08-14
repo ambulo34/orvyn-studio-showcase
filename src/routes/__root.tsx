@@ -112,8 +112,14 @@ function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.documentElement.setAttribute("data-js","true")`,
+          }}
+        />
         <HeadContent />
       </head>
+
       <body>
         {children}
         <Scripts />
