@@ -1,17 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Hero } from "@/components/site/Hero";
+import { PageHeader } from "@/components/site/PageHeader";
 import { ServicesSection } from "@/components/site/ServicesSection";
-import { WorkSection } from "@/components/site/WorkSection";
-import { WhySection } from "@/components/site/WhySection";
 import { ProcessSection } from "@/components/site/ProcessSection";
-import { AboutSection } from "@/components/site/AboutSection";
 import { CTASection } from "@/components/site/CTASection";
 
-const title = "ORVYN — Digital Solutions Studio";
+const title = "Services — Websites, Web Apps & E-commerce | ORVYN";
 const description =
-  "ORVYN designs and builds modern websites, web applications and digital experiences that help businesses stand out and grow.";
+  "Websites, web applications, e-commerce stores and brand design — built by ORVYN around the way your business actually works.";
 
-export const Route = createFileRoute("/")({
+export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       { title },
@@ -22,18 +19,19 @@ export const Route = createFileRoute("/")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  component: Index,
+  component: ServicesPage,
 });
 
-function Index() {
+function ServicesPage() {
   return (
     <>
-      <Hero />
+      <PageHeader
+        eyebrow="Services"
+        title="Everything your business needs to exist properly online."
+        copy="We take on a small number of projects at a time so each one gets real design and engineering attention."
+      />
       <ServicesSection />
-      <WorkSection limit={3} />
-      <WhySection />
       <ProcessSection />
-      <AboutSection />
       <CTASection />
     </>
   );
