@@ -7,7 +7,7 @@ const title = "Selected Work — Digital Projects | ORVYN";
 const description =
   "A look at some of the digital experiences ORVYN has designed and built, including Elgon Star Motors.";
 
-export const Route = createFileRoute("/work")({
+export const Route = createFileRoute("/work/")({
   head: () => ({
     meta: [
       { title },
