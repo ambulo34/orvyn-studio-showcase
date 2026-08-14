@@ -35,7 +35,7 @@ export function Nav() {
     >
       <div
         className={cn(
-          "container-x grid grid-cols-[minmax(0,1fr)_auto] items-center transition-all duration-500",
+          "container-x flex items-center justify-between gap-6 transition-all duration-500",
           scrolled ? "h-16" : "h-20 md:h-24",
         )}
       >
