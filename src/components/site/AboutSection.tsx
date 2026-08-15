@@ -1,4 +1,5 @@
 import aboutVisual from "@/assets/about-visual.jpg";
+import aboutVisualSet from "@/assets/about-visual.jpg?w=400;640;960&format=webp&quality=72&as=srcset";
 import { Reveal } from "./Reveal";
 import { ActionLink } from "./Button";
 
@@ -30,6 +31,8 @@ export function AboutSection({ compact = false }: { compact?: boolean }) {
           <div className="overflow-hidden rounded-xl border border-border">
             <img
               src={aboutVisual}
+              srcSet={aboutVisualSet}
+              sizes="(min-width: 1024px) 40vw, 100vw"
               alt="Architectural detail with a copper edge of light"
               width={1200}
               height={1504}

@@ -14,10 +14,13 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
         <div className="aspect-4/3 overflow-hidden sm:aspect-16/10">
           <img
             src={project.image}
+            srcSet={project.imageSrcSet}
+            sizes="(min-width: 1024px) 50vw, 100vw"
             alt={project.imageAlt}
             width={1600}
             height={1200}
             loading={index === 0 ? "eager" : "lazy"}
+            fetchPriority={index === 0 ? "high" : "auto"}
             decoding="async"
             className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
           />
