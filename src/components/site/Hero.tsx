@@ -1,4 +1,5 @@
 import heroImage from "@/assets/hero-composition.jpg";
+import heroImageSet from "@/assets/hero-composition.jpg?w=480;768;1100&format=webp&quality=72&as=srcset";
 import { ActionLink } from "./Button";
 
 export function Hero() {
@@ -47,6 +48,9 @@ export function Hero() {
           <div className="overflow-hidden rounded-2xl border border-border bg-surface">
             <img
               src={heroImage}
+              srcSet={heroImageSet}
+              sizes="(min-width: 1024px) 45vw, 100vw"
+              fetchPriority="high"
               alt="Layered interface panels representing digital products built by ORVYN"
               width={1408}
               height={1408}

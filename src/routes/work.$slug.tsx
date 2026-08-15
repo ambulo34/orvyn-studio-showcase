@@ -98,7 +98,10 @@ function ProjectDetail() {
           <Reveal className="overflow-hidden rounded-xl border border-border bg-surface">
             <img
               src={project.image}
+              srcSet={project.imageSrcSet}
+              sizes="(min-width: 1280px) 1200px, 100vw"
               alt={project.imageAlt}
+              fetchPriority="high"
               width={1600}
               height={1200}
               decoding="async"
@@ -169,6 +172,8 @@ function ProjectDetail() {
                   <div className="overflow-hidden rounded-xl border border-border bg-surface">
                     <img
                       src={item.src}
+                      srcSet={item.srcSet}
+                      sizes="(min-width: 768px) 50vw, 100vw"
                       alt={item.alt}
                       width={1600}
                       height={1200}
