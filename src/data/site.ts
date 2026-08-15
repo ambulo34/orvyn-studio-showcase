@@ -4,6 +4,13 @@ import workApp from "@/assets/work-app.jpg";
 import workBrand from "@/assets/work-brand.jpg";
 import detailDevices from "@/assets/detail-devices.jpg";
 import detailSystem from "@/assets/detail-system.jpg";
+import workElgonSet from "@/assets/work-elgon.jpg?w=480;768;1200&format=webp&quality=72&as=srcset";
+import workCommerceSet from "@/assets/work-commerce.jpg?w=480;768;1200&format=webp&quality=72&as=srcset";
+import workAppSet from "@/assets/work-app.jpg?w=480;768;1200&format=webp&quality=72&as=srcset";
+import workBrandSet from "@/assets/work-brand.jpg?w=480;768;1200&format=webp&quality=72&as=srcset";
+import detailDevicesSet from "@/assets/detail-devices.jpg?w=480;768;1200&format=webp&quality=72&as=srcset";
+import detailSystemSet from "@/assets/detail-system.jpg?w=480;768;1200&format=webp&quality=72&as=srcset";
+
 
 export type NavItem = { label: string; to: string };
 
