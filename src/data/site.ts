@@ -63,7 +63,7 @@ export const services: Service[] = [
   },
 ];
 
-export type GalleryItem = { src: string; alt: string; caption: string };
+export type GalleryItem = { src: string; srcSet?: string; alt: string; caption: string };
 
 export type Project = {
   slug: string;
@@ -72,6 +72,7 @@ export type Project = {
   description: string;
   year: string;
   image: string;
+  imageSrcSet?: string;
   imageAlt: string;
   scope: string[];
   placeholder?: boolean;
@@ -94,6 +95,7 @@ export const projects: Project[] = [
       "A modern digital experience designed to give an automotive business a stronger online presence and make its vehicles easier for customers to explore.",
     year: "2026",
     image: workElgon,
+    imageSrcSet: workElgonSet,
     imageAlt: "Elgon Star Motors website shown on a laptop screen",
     scope: ["Website", "UI/UX Design", "Development"],
     overview:
@@ -111,9 +113,9 @@ export const projects: Project[] = [
       { label: "Role", value: "Design & Build" },
     ],
     gallery: [
-      { src: workElgon, alt: "Elgon Star Motors homepage on a laptop", caption: "Homepage and inventory entry point" },
-      { src: detailDevices, alt: "Vehicle listings on tablet and phone", caption: "Listings on tablet and mobile" },
-      { src: detailSystem, alt: "Typography and colour specimens", caption: "Type and colour direction" },
+      { src: workElgon, srcSet: workElgonSet, alt: "Elgon Star Motors homepage on a laptop", caption: "Homepage and inventory entry point" },
+      { src: detailDevices, srcSet: detailDevicesSet, alt: "Vehicle listings on tablet and phone", caption: "Listings on tablet and mobile" },
+      { src: detailSystem, srcSet: detailSystemSet, alt: "Typography and colour specimens", caption: "Type and colour direction" },
     ],
   },
   {
@@ -124,6 +126,7 @@ export const projects: Project[] = [
       "A placeholder store concept showing how ORVYN structures product discovery, browsing and checkout for retail businesses.",
     year: "2026",
     image: workCommerce,
+    imageSrcSet: workCommerceSet,
     imageAlt: "Minimal e-commerce store interface on desktop and mobile",
     scope: ["E-commerce", "Design System"],
     placeholder: true,
@@ -142,9 +145,9 @@ export const projects: Project[] = [
       { label: "Role", value: "Design & Build" },
     ],
     gallery: [
-      { src: workCommerce, alt: "Store interface on desktop and mobile", caption: "Storefront and product grid" },
-      { src: detailDevices, alt: "Store pages on tablet and phone", caption: "Mobile shopping experience" },
-      { src: detailSystem, alt: "Colour and type specimens", caption: "Component and colour system" },
+      { src: workCommerce, srcSet: workCommerceSet, alt: "Store interface on desktop and mobile", caption: "Storefront and product grid" },
+      { src: detailDevices, srcSet: detailDevicesSet, alt: "Store pages on tablet and phone", caption: "Mobile shopping experience" },
+      { src: detailSystem, srcSet: detailSystemSet, alt: "Colour and type specimens", caption: "Component and colour system" },
     ],
   },
   {
@@ -155,6 +158,7 @@ export const projects: Project[] = [
       "A placeholder platform concept showing how ORVYN designs internal tools around real day-to-day business workflows.",
     year: "2026",
     image: workApp,
+    imageSrcSet: workAppSet,
     imageAlt: "Web application dashboard interface on a laptop",
     scope: ["Web App", "Product Design"],
     placeholder: true,
@@ -173,9 +177,9 @@ export const projects: Project[] = [
       { label: "Role", value: "Product Design & Build" },
     ],
     gallery: [
-      { src: workApp, alt: "Application dashboard on a laptop", caption: "Primary workspace view" },
-      { src: detailDevices, alt: "Application views on tablet and phone", caption: "Responsive views" },
-      { src: detailSystem, alt: "Interface type and colour specimens", caption: "Interface foundations" },
+      { src: workApp, srcSet: workAppSet, alt: "Application dashboard on a laptop", caption: "Primary workspace view" },
+      { src: detailDevices, srcSet: detailDevicesSet, alt: "Application views on tablet and phone", caption: "Responsive views" },
+      { src: detailSystem, srcSet: detailSystemSet, alt: "Interface type and colour specimens", caption: "Interface foundations" },
     ],
   },
   {
@@ -186,6 +190,7 @@ export const projects: Project[] = [
       "A placeholder identity concept showing how ORVYN builds a consistent visual language across print and digital.",
     year: "2026",
     image: workBrand,
+    imageSrcSet: workBrandSet,
     imageAlt: "Brand identity system laid out with stationery and type specimens",
     scope: ["Branding", "Art Direction"],
     placeholder: true,
@@ -204,9 +209,9 @@ export const projects: Project[] = [
       { label: "Role", value: "Identity & Art Direction" },
     ],
     gallery: [
-      { src: workBrand, alt: "Brand identity stationery and specimens", caption: "Identity applications" },
-      { src: detailSystem, alt: "Type scale and colour swatches", caption: "Type scale and palette" },
-      { src: detailDevices, alt: "Brand applied on digital devices", caption: "Applied across digital" },
+      { src: workBrand, srcSet: workBrandSet, alt: "Brand identity stationery and specimens", caption: "Identity applications" },
+      { src: detailSystem, srcSet: detailSystemSet, alt: "Type scale and colour swatches", caption: "Type scale and palette" },
+      { src: detailDevices, srcSet: detailDevicesSet, alt: "Brand applied on digital devices", caption: "Applied across digital" },
     ],
   },
 ];
