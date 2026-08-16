@@ -38,6 +38,23 @@ export function Footer() {
             ))}
           </nav>
 
+          <nav aria-label="Legal" className="flex flex-col gap-3">
+            <p className="eyebrow mb-1">Legal</p>
+            {[
+              { label: "Terms of Service", to: "/terms" },
+              { label: "Privacy Policy", to: "/privacy" },
+              { label: "Cookie Policy", to: "/cookies" },
+            ].map((item) => (
+              <Link
+                key={item.to}
+                to={item.to}
+                className="w-fit text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
           <div className="flex flex-col gap-3">
             <p className="eyebrow mb-1">Social</p>
             {socials.map((s) => (
