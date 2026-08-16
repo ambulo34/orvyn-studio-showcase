@@ -1,5 +1,5 @@
-import navLogo from "@/assets/orvyn-logo-nav.webp.asset.json";
-import stackedLogo from "@/assets/orvyn-logo-light.webp.asset.json";
+import navLogo from "@/assets/orvyn-logo-nav.webp";
+import stackedLogo from "@/assets/orvyn-logo-light.webp";
 import { cn } from "@/lib/utils";
 
 /**
@@ -19,7 +19,7 @@ export function Logo({
 
   return (
     <img
-      src={asset.url}
+      src={asset}
       alt="ORVYN — Building digital excellence"
       width={stacked ? 420 : 540}
       height={stacked ? 273 : 95}
