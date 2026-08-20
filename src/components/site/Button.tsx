@@ -51,8 +51,9 @@ export function ActionLink({
       </a>
     );
   }
+  const { target: _target, ...linkRest } = rest;
   return (
-    <Link to={to ?? "/"} {...(hash ? { hash } : {})} className={classes}>
+    <Link to={to ?? "/"} {...(hash ? { hash } : {})} className={classes} {...linkRest}>
       {children}
     </Link>
   );
