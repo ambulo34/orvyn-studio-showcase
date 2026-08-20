@@ -52,7 +52,7 @@ export function ActionLink({
     );
   }
   return (
-    <Link to={to ?? "/"} {...(hash ? { hash } : {})} className={classes}>
+    <Link to={to ?? "/"} {...(hash ? { hash } : {})} className={classes} {...rest}>
       {children}
     </Link>
   );
